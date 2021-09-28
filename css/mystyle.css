@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 0.2s all ease-in;
+    font-family: 'Merriweather', serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+.logo img{
+    height: 5rem;
+    width: 5rem;
+}
+.navbar{
+    height: 10vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+
+.navbar a{
+    color: coral!important;
+    font-weight: 500;
+    justify-content: space-around!important;
+}
+.navbar a:hover{
+    color: yellow!important;
+}
+
+.navbar{
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 10px 12px 13px 15px solid grey;
+    top:0;
+    left:0;
+   /*background-color: rgba(39, 38, 38, 0.1);*/
+}
+
+/*Mobile nav*/
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding:0 20px;
+    color:#ffff;
+    transition: 0.3s ease;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link,
+.navbar i.active{
+    color:coral;
+   
+}
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+.navbar-toggler-icon span{
+margin-bottom: 10px;
+}
+#home span{
+    color:crimson;
+    text-transform: capitalize;
+}
+#home{
+    height: 32vh;
+    animation: zoomInout 20s ease infinite;
+    margin-top: 2%;
+}
+
+#home .banner1,
+#home .banner2,
+#home .banner3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% center;
+    min-height: 60vh;
+    position: relative;
+}
+#home .banner1{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/emy-XoByiBymX20-unsplash.jpg);
+}
+#home .banner2{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/robin-stickel-tzl1UCXg5Es-unsplash.jpg);
+}
+#home .banner3{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/travis-yewell-xXJciiQAJ-Y-unsplash.jpg);
+}
+#home .banner1-text{
+    position: absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-80%, -50%);
+   color:#fff;
+}
+#home .banner1-text h1{
+    font-size: 4rem;
+    font-family: 'Grey Qo', cursive;
+}
+#home .banner1-text h2{
+    font-size: 3.4rem;
+    font-family: 'Grey Qo', cursive;
+}
+.carousel-indicators [data-target="#carouselExampleIndicators"]{
+    background-color: rgb(247, 74, 108) !important; 
+    width: 3rem;
+}
+#about{
+    min-height: 70vh;
+   
+}
+.about-section{
+    margin-top: 17%;
+    padding-top: 50px;
+    justify-content: center;
+}
+.section-title{
+    width:100%;
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 15px;
+}
+.section-title h2{
+    font-size: 1.8rem;
+    color:crimson;
+}
+.section-title h2::before{
+    content: attr(data-title);
+    display: block;
+    font-size: 30px;
+    color:rgb(156, 141, 141);
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 400;
+    padding-bottom: 1%;
+}
+.about-text h1
+{
+    font-size: 2rem;
+    color:black;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.about-text p{
+    font-size: 1rem;
+    color:black;
+    margin: 0 0 15px;
+}
+.about-text, 
+.about-img{
+    width:50%;
+   
+}
+.about-img img{
+    height: 350px;
+    justify-content: space-between;
+   padding-left: 20%;
+    border-radius: 20px;
+    width:90%;
+}
+.about-img h3{
+    font-size: 28px;
+    font-family: 'Cedarville Cursive', cursive;
+    color:black;
+}
+.about-img .img-box{
+    position: relative;
+}
+.about-img .img-box::before{
+    content: ' ';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border:2px solid blue;
+    left:calc(50% - 50px);
+    top:calc(50% - 50px);
+    animation: spin01 10s linear infinite ;
+}
+@keyframes spin01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.about-img .img-box h3{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width:100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+.menu-section{
+    min-height: 40vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/footer1.jpg);
+    background-attachment: fixed;
+   padding-top: 20px;
+   padding-bottom: 7%;
+}
+.menu-section .section-title{
+    margin-bottom: 40px;
+}
+.menu-tabs{
+    padding: 0 15px;
+    width:100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu-tabs button{
+    color:#fff;
+}
+.menu-tab-item{
+    font-size: 1.5rem;
+    font-family: inherit;
+    border:none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px 10px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+.menu-tabs-content{
+    display: none;
+}
+.menu-tabs-content.active{
+    display: flex;
+}
+.menu-tab-item.active{
+    color:rgba(236, 69, 2, 0.911);
+}
+.menu-item-title img{
+    height: 100px;
+    width:100px;
+}
+.menu-item{
+    width:50%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-item::after{
+    content: ' ';
+    position: absolute;
+    left:15px;
+    right:15px;
+    bottom:0;
+    border-bottom:1px dashed rgb(149, 238, 226);
+    padding-bottom: 10px;
+}
+.menu-item:nth-last-of-type(2)::after,
+.menu-item:nth-last-of-type(1)::after{
+    border:none;
+}
+.menu-item-title{
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 80px);
+
+}
+.menu-item-title img{
+    max-width: 90px;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+.menu-item-title h3{
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    color:#fff;
+}
+.menu-item-price{
+    font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  color: antiquewhite;
+}
+.menu-item:hover .menu-item-title h3{
+    color:darkgoldenrod;
+}
+.menu-item:hover .menu-item-price{
+    color:#fff;
+}
+footer p{
+    font-size: 16px;
+    color:rgb(26, 25, 24);
+}
+footer ul li {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+}
+footer h5{
+    font-size: 25px;
+    color:white;
+    font-weight: 700;
+}
+footer  span{
+    font-size: 18px;
+    padding-right: 10px;
+    color:rgb(10, 151, 151);
+}
+
+.copyright .row{
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.copyright .row i{
+    font-size: 25px;
+    padding: 10px 20px;
+    border: 1px solid rgb(10, 107, 107);
+    color:rgb(10, 107, 107);
+    border-radius: 10px;
+    justify-content: space-evenly;
+    
+}
+.copyright .row p{
+    font-weight: 700;
+    color:white;
+}
+.copyright .row i:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+    color:white;
+    background-color:rgb(10, 107, 107) ;
+}
+footer{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/footer2.jpg);
+    color:white;
+    padding-bottom: 20px;
+}
+footer p{
+    color:white;
+}
